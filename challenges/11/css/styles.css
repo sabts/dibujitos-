@@ -11,4 +11,29 @@ Colors:
 }
 
 .shape {
+  position: relative;
+  top: 100px;
+  left: 100px;
+  height: 100px;
+  width: 140px;
+  background-color:#F7EC7D ;
 }
+.shape::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left:  140px;
+  height: 100px;
+  width: 60px;
+  background-color: #E38F66 ;
+}
+.shape::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left:  130px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100px;
+  background-color:#62306D;
+  box-shadow: 0 100px #62306D, 60px 100px 0 10px #62306D, 60px 0px 0 10px #62306D, -140px 100px 0 10px #62306D, -140px 0px 0 10px #62306D;}
