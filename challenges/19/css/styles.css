@@ -10,12 +10,33 @@ Colors:
   background-color: #4f77ff;
 }
 
-.shape { 
-  position: relative;
-  top: 200px;
-  left: 50px;
+.shape {  content: "";
+  position:relative;
+  top: 50px;
+  left: 160px;
+  height: 80px;
+  width: 80px;
+  border-radius: 100px;
+  background-color: #ffffff;
+ 
+}
+.shape::before{
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  height: 80px;
+  width: 80px;
+  border-radius: 100px;
+  background-color:#4f77ff;
+}
+.shape::after{
+  content: "";
+  position: absolute;
+  top: 150px;
+  left: -110px;
   width: 300px;
   height: 300px;
-  rotate: 45deg;
+  rotate:45deg;
   background-color: #1038BF;
 }
