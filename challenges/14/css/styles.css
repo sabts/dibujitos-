@@ -4,29 +4,48 @@ Colors:
   Red: #84271C
   Yellow: #ECA03D
 */
-
+*{box-sizing: border-box;}
 .box {
   background-color: #191210;
 }
 
 .shape {
-  position: relative;
-  top: 80px;
-  left: 130px;
-  height: 140px;
-  width: 140px;
+position: relative;
+  top: 125px;
+  left: 175px;
+  height: 50px;
+  width: 50px;
+  background-color: #84271C;
   border-radius: 100px;
-  background-color: transparent;
-  border: 20px solid #ECA03D;
+  outline: 20px solid #ECA03D;
+  outline-offset: 25px;
 }
-.shape::after{
+
+.shape::after {
   content: "";
   position: absolute;
-  top: 0px;
-  left: -100px;
-  height: 100px;
-  width: 100px;
-  border-radius: 100px;
-  background-color: transparent;
-  border: 20px solid #ECA03D;
-}
+    top: -25px;
+    left: -125px;
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+    border-radius: 100px;
+    border: 20px solid transparent;
+    border-bottom: 20px solid #ECA03D;
+    border-right: 20px solid #ECA03D;
+    rotate: 45deg;
+  }
+  .shape::before {
+    content: "";
+    position: absolute;
+      top: -25px;
+      left: 75px;
+      height: 100px;
+      width: 100px;
+      background-color: transparent;
+      border-radius: 100px;
+      border: 20px solid transparent;
+      border-bottom: 20px solid #ECA03D;
+      border-right: 20px solid #ECA03D;
+      rotate: -135deg;
+    }
